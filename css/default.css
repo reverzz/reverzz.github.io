@@ -44,14 +44,18 @@ body {
   color: #474747;
 }
 
-/* main section as a one page */
+/*animation*/
 
-.section {
+.animation {
   -webkit-animation: fade-in 1s linear; /* Safari 4+ */
   -moz-animation: fade-in 1s linear; /* Fx 5+ */
   -o-animation: fade-in 1s linear; /* Opera 12+ */
   animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
-  
+}
+
+/* main section as a one page */
+
+.section {
   height: 100vh;
   width: 100%;
   max-width: 1360px;
@@ -230,18 +234,42 @@ body {
   padding: 0 2rem;
 }
 
-
-
 /* gallery */ 
 
+.gallery {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-
-/* .gallery img {
-  max-width: 100%;
+.gallery img {
+  width: 100%; /* need to overwrite inline dimensions */
   height: auto;
 }
 
+.grid-container {
+  display: grid;
+/*  grid-template-columns: repeat(4, 340px);*/
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-rows: repeat(auto, 480px);
+  margin: 0 auto;
+ } 
 
- */
+.location-listing {
+  position: relative;
+}
 
+.location-image {
+ line-height: 0;
+ overflow: hidden;
+}
 
+.location-image img {
+ filter: blur(0px);
+ transition: filter 0.3s ease-in;
+/* transform: scale(1.1);*/
+}
+
+.location-listing:hover .location-image img {
+ filter: blur(3px);
+}
