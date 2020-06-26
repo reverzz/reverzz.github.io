@@ -249,9 +249,10 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, 340px);
   grid-template-rows: repeat(auto, 480px);
   margin: 0 auto;
+  justify-content: center;  
  } 
 
 .location-listing {
