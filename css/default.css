@@ -260,15 +260,19 @@ body {
 }
 
 .location-image {
- line-height: 0;
- overflow: hidden;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .location-image img {
- filter: blur(0px);
- transition: filter 0.3s ease-in;
+  filter: blur(1px);
+  transition: filter 0.3s ease-in; 
+  transition: transform 0.3s ease-in;
 }
 
 .location-listing:hover .location-image img {
- filter: blur(3px);
+  filter: blur(0px);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
