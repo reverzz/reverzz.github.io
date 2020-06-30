@@ -255,22 +255,22 @@ body {
   justify-content: center;  
  } 
 
-.location-listing {
+.object-listing {
   position: relative;
 }
 
-.location-image {
+.object-image {
   line-height: 0;
   overflow: hidden;
 }
 
-.location-image img {
+.object-image img {
   filter: blur(1px);
   transition: filter 0.3s ease-in; 
   transition: transform 0.3s ease-in;
 }
 
-.location-listing:hover .location-image img {
+.object-listing:hover .object-image img {
   filter: blur(0px);
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
