@@ -148,12 +148,10 @@ body {
 .text_main_page {
   text-transform: uppercase;
   width: 100%;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .over_photo {
-  margin-left: -88px;
+  margin: 45px 0 0 -118px;
 }
 
 .over_photo span {
@@ -166,7 +164,7 @@ body {
   width: 380px;
   text-align: justify;
   font-size: 30px;
-  margin: -30px 65px;
+  margin: 0 35px;
 }
 
 .main_page_info:before,
@@ -266,8 +264,7 @@ body {
 
 .object-image img {
   filter: blur(1px);
-  transition: filter 0.3s ease-in; 
-  transition: transform 0.3s ease-in;
+  transition: filter 0.3s ease-in, transform 0.3s ease-in;
 }
 
 .object-listing:hover .object-image img {
